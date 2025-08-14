@@ -62,7 +62,6 @@
     </nav>
     <!-- Navbar End -->
 
-
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -82,12 +81,11 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
     <!-- Carousel End -->
-
-
+ 
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -225,9 +223,6 @@
         src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
     <!-- Facebook Section End -->
 
-
-
-
     <!-- Add Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -264,7 +259,7 @@
     </div>
     <!-- Benefits End -->
 
-    <!-- Testimonials Start -->
+    <!-- Testimonials Start  
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-2 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
@@ -293,41 +288,80 @@
             </div>
         </div>
     </div>
-    <!-- Testimonials End -->
+    Testimonials End -->
 
     <!-- Partner Logos Start -->
-    <div class="container-xxl py-5 ">
+    <div class="container-xxl py-5">
         <div class="container text-center">
-            <div class="text-center mx-auto mb-2 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <div class="text-center mx-auto mb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block bg-secondary text-primary py-1 px-4">Our Partners</p>
+                <h2 class="text-uppercase">Proudly Collaborating With</h2>
             </div>
             <div class="row g-4 align-items-center justify-content-center">
                 <div class="col-6 col-sm-4 col-md-2 wow fadeIn" data-wow-delay="0.1s">
-                    <img src="img/cover.jpg" class="img-fluid" alt="Partner 1">
-                </div>
-                <div class="col-6 col-sm-4 col-md-2 wow fadeIn" data-wow-delay="0.2s">
-                    <img src="img/cover.jpg" class="img-fluid" alt="Partner 2">
+                    <div class="partner-circle">
+                        <img src="img/axyz.jpg" alt="Partner 1">
+                    </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-2 wow fadeIn" data-wow-delay="0.3s">
-                    <img src="img/cover.jpg" class="img-fluid" alt="Partner 3">
+                    <div class="partner-circle">
+                        <img src="img/swatfit.png" alt="Partner 3">
+                    </div>
                 </div>
+                <div class="col-6 col-sm-4 col-md-2 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="partner-circle">
+                        <img src="img/cor3.png" alt="Partner 2">
+                    </div>
+                </div> 
                 <div class="col-6 col-sm-4 col-md-2 wow fadeIn" data-wow-delay="0.4s">
-                    <img src="img/cover.jpg" class="img-fluid" alt="Partner 4">
+                    <div class="partner-circle">
+                        <img src="img/cover.jpg" alt="Partner 4">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Partner Logos End -->
 
+    <!-- Styles -->
+    <style>
+        .partner-circle {
+            width: 150px;
+            /* fixed width */
+            height: 150px;
+            /* fixed height */
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #860000;
+            /* Bootstrap primary color */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            margin: auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .partner-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* ensures the image fills without distortion */
+        }
+
+        .partner-circle:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <!-- Footer Bottom -->
         <div class="container-fluid text-center py-3" style="border-top: 1px solid rgba(255,255,255,0.1);">
             <p class="mb-1" style="font-size: 14px;">
-                &copy; 2025 <a class="text-primary" href="#">Cor3 Solutions</a>. All Rights Reserved.
+                &copy; 2025 <a class="text-primary" href="https://cor3-solutions.vercel.app/" target="_blank">Cor3 Solutions</a>. All Rights Reserved.
             </p>
             <p class="mb-0" style="font-size: 12px;">
-                Designed By <a class="border-bottom text-light" href="https://htmlcodex.com">HTML Codex</a>
+                Designed By <a class="border-bottom text-light" href="#">HTML Codex</a>
             </p>
         </div>
     </div>
